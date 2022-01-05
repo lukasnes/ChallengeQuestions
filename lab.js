@@ -14,9 +14,9 @@ if(lovesCode = true){
 //CODE HERE
 
 // For problems 2-3 use the following lines of code:
-var amysAge = 29
+var amysAge = 35
 var brittanisAge = 34
-var amysBirthYear = 1991
+var amysBirthYear = 1985
 var brittanisBirthYear = 1986
 
 ////////// PROBLEM 2 //////////
@@ -26,6 +26,13 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
+if(amysAge > brittanisAge){
+  console.log("Amy is older than Brittani.")
+} else if (brittanisAge > amysAge) {
+  console.log("Brittani is older than Amy.")
+} else {
+  console.log("They're the same age!")
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -35,12 +42,16 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+if(amysBirthYear === brittanisBirthYear){
+  console.log("Amy & Brittani were born in the same year")
+} else {
+  console.log("Amy & Brittani were not born in the same year")
+}
 
 ////////// PROBLEM 4 //////////
 
-let temperature = 55
-let rain = true
+let temperature = 200
+let rain = false
 
 /*
   Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
@@ -48,7 +59,19 @@ let rain = true
 */
 
 //CODE HERE
-
+if(temperature >= 80 && rain == true){
+  console.log("It's t-shirt and umbrella weather.")
+} else if(temperature > 60 && temperature < 80 && rain == true){
+  console.log("Don't forget your rain-jacket!")
+} else if(temperature <= 60 && rain == true){
+  console.log("I think you should take a coat and umbrella, it's cold out!")
+} else if(temperature >= 80 && rain == false){
+  console.log("What a beautiful day for loose and comfy clothing")
+} else if(temperature > 60 && temperature < 80 && rain == false){
+  console.log("It's chilly outside! Take a jacket!")
+} else if(temperature <= 60 && rain == false){
+  console.log("Bundle up! You don't wanna catch a cold!")
+}
 
 ////////// PROBLEM 5 //////////
 
