@@ -80,7 +80,9 @@ if(temperature >= 80 && rain == true){
 */
 
 //CODE HERE
-
+for(let i = 0; i < 10; i++){
+  console.log("Hello")
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -89,7 +91,9 @@ if(temperature >= 80 && rain == true){
 */
 
 //CODE HERE
-
+for(let i = 1; i <= 10; i++){
+  console.log(`${i}`)
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -98,6 +102,10 @@ if(temperature >= 80 && rain == true){
 */
 
 //CODE HERE
+for(let i = 10; i >= 0; i--){
+  console.log(`${i}`)
+}
+
 
 let score = 0
 let passingScore = 7
@@ -107,7 +115,10 @@ let passingScore = 7
 /*
   Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
-
+while (score < passingScore){
+  score++
+  console.log("You shall not pass!")
+}
 //CODE HERE
 
 ////////// INTERMEDIATE PROBLEMS //////////
@@ -118,14 +129,23 @@ let passingScore = 7
   Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
 
 */
-
+let changeMyMind = true
+if(changeMyMind == true){
+  let changeMyMind = false
+  console.log("False")
+} else if (changeMyMind == false){
+  let changeMyMind = true
+  console.log("True")
+}
 //CODE HERE
 
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 //CODE HERE
-
+if(changeMyMind !== "pizza"){
+  console.log("True")
+}
 
 
 ////////// ADVANCED PROBLEMS //////////
@@ -136,3 +156,10 @@ let z = 5
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+while (z > 0){    //This loop reads z as long as it is greater than 0
+  for(let i = z; i > 0; i--){ //This loop lets i = z, meaning it begins at 5, and decrements down to 1.
+    console.log(i) //This then logs i through its first loop
+  }
+  z-- //And finally, once those numbers are logged, z is decremented by 1, and the loop begins again, this time with z = 4. etc.
+
+}
